@@ -13,6 +13,21 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.angrybeaver.karaf</groupId>
+            <artifactId>dependency-features</artifactId>
+            <classifier>features</classifier>
+            <type>xml</type>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -22,6 +37,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <enableGeneration>true</enableGeneration>
+                    <includeTransitiveDependency>true</includeTransitiveDependency>
+                    <aggregateFeatures>false</aggregateFeatures>
                 </configuration>
                 <executions>
                     <execution>

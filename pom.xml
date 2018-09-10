@@ -28,8 +28,15 @@
                 <version>${project.version}</version>
                 <classifier>features</classifier>
                 <type>xml</type>
-                <scope>runtime</scope>
             </dependency>
+            <dependency>
+                <groupId>com.angrybeaver.karaf</groupId>
+                <artifactId>dependency-features</artifactId>
+                <version>${project.version}</version>
+                <classifier>features</classifier>
+                <type>xml</type>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

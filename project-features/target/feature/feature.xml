@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="project-features"/>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="project-features">
+    <repository>mvn:com.angrybeaver.karaf/dependency-features/1.0-SNAPSHOT/xml/features</repository>
+    <feature name="project-features" description="project-features" version="1.0.0.SNAPSHOT">
+        <feature version="0.0.0" prerequisite="false" dependency="false">sonstiges</feature>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>wrap:mvn:junit/junit/4.12</bundle>
+        <bundle>wrap:mvn:org.hamcrest/hamcrest-core/1.3</bundle>
+    </feature>
+</features>
