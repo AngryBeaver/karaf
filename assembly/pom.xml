@@ -32,6 +32,7 @@
             <groupId>com.angrybeaver.karaf</groupId>
             <artifactId>project-features</artifactId>
             <type>xml</type>
+            <classifier>features</classifier>
             <scope>runtime</scope>
         </dependency>
         <dependency>
